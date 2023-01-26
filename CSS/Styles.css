@@ -65,6 +65,8 @@ nav ul li a:hover {
     "body__integrantes"
     "footer";
     grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+
 }
 
 #body__inicio {
@@ -83,6 +85,7 @@ nav ul li a:hover {
     text-align: center;
     align-items: center;
     gap: 10px;
+    padding: 3rem;
 }
 
 #body__integrantes {
@@ -97,6 +100,7 @@ nav ul li a:hover {
     width: 60rem;
 }
 
+/* FOOTER */
 #footer {
     grid-area: footer;
     background-color: black;
@@ -181,6 +185,8 @@ nav ul li a:hover {
 
 #body__contacto {
     background-color: rgb(190, 159, 110);
+    text-align: center;
+
 }
 
 #contacto {
@@ -200,7 +206,7 @@ nav ul li a:hover {
 .formulario {
     font-family: Montserrat;
     src: url(../Font/Montserrat-VariableFont_wght.ttf);
-    background-color: white;
+    background-color: rgb(215, 215, 215);
     color: black;
     display: flex;
     flex-wrap: wrap;
@@ -208,6 +214,7 @@ nav ul li a:hover {
     width: 500px;
     height: 460px;
     border-radius: 0.25rem;
+    border: solid 1px black;
 }
 
 .formulario__item {
@@ -254,9 +261,56 @@ input {
 
 
 
+/* DISCOGRAFIA */
 
+#body__discografia {
+    background-color: rgb(190, 159, 110);
+    text-align: center;
+
+}
+
+#discografia {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    gap: 30px;
+    margin-bottom: 3rem;
+}
+.discografia__album img {
+    width: 350px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.discografia__album:hover {
+    border: solid 1px black;}
+
+
+/* GALERIA */
+
+#body__galeria {
+    background-color: rgb(190, 159, 110);
+    text-align: center;
+}
+
+#galeria {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    gap: 100px;
+}
+
+#galeria img {
+    width: 500px;
+
+}
 
 @media screen and (min-width: 768px) {
+
+    /* HEADER */
     .menu__nav {
         display: flex;
         flex-direction: row;
@@ -267,6 +321,7 @@ input {
         justify-content: space-around;
     }
     
+    /* FOOTER */
     #footer {
         display: grid; 
         grid-template-columns: 1fr 1fr 1fr; 
@@ -306,6 +361,25 @@ input {
     #contacto {
         display: flex;
         flex-direction: row;
+    }
+    
+    /* DISCOGRAFIA */
+
+    #discografia {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    /* GALERIA */
+    #galeria {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
     }
     
 }
