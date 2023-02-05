@@ -2,12 +2,16 @@
 * { margin:0px;
     padding: 0px; }
 
+    /* HTML { Font-size: 62,5% ;} */
+
+
 a {text-decoration: none; color: white;}
+
 h1 {
     font-family: Montserrat;
     text-align: center;
     font-size: 100px;
-    margin: 3rem;}
+    /* margin: 3rem;} */}
 h2 {
     text-align: center;
     font-family: Montserrat;
@@ -318,8 +322,7 @@ input {
     .header {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-    }
+        justify-content: space-around;}
     
     /* FOOTER */
     #footer {
