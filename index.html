@@ -14,17 +14,27 @@
 
 <body id="body">
     <header id="menu">
-        <nav class="header">
-            <a href="index.html"> <img class="menu__logo" src="../PreEntrega2_Biar/Img/NTVG logo.png" alt="ntvglogo"></a>
-            <ul class="menu__nav">
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="Pages/Discografia.html">DISCOGRAFIA</a></li>
-                <li><a href="Pages/Tienda.html">TIENDA</a></li>
-                <li><a href="Pages/Galeria.html">GALERIA</a></li>
-                <li><a href="Pages/Contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+        <nav class="header navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img class="menu__logo" src="../PreEntrega2_Biar/Img/NTVG logo.png" alt="ntvglogo" class="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+    
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-end">
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">INICIO</a></li>
+    
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="Pages/Discografia.html">DISCOGRAFIA</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="Pages/Tienda.html">TIENDA</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="Pages/Galeria.html">GALERIA</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="Pages/Contacto.html">CONTACTO</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
+
     
     <div id="body__inicio">
         <H1> NO TE VA GUSTAR</H1>
@@ -63,18 +73,27 @@
                 <h6 class="lead">(TECLADOS)</h6>
     </div>
     
-    <footer id="footer">
-        <a id="footer__flecha" href="#menu"> <img src="../PreEntrega2_Biar/Img/Flechaarriba.png" alt="Flecha arriba"></a>
-        <H5 id="footer__ntvg">NO TE VA GUSTAR</H5>
-        <nav id="footer__redes">
-            <a href="https://www.instagram.com/notevagustaroficial/?hl=es-la" target="_blank"> <img src="../PreEntrega2_Biar/Img/Redes/instagram.png" alt="Instagram" class="footer__img"></a>
-            <a href="https://twitter.com/ntvgoficial" target="_blank"> <img src="../PreEntrega2_Biar/Img/Redes/twitter.png" alt="Twitter" class="footer__img"></a>
-            <a href="https://www.facebook.com/notevagustaroficial" target="_blank"> <img src="../PreEntrega2_Biar/Img/Redes/facebook.png" alt="facebook" class="footer__img"></a>
-            <a href="https://open.spotify.com/artist/4ZDoy7AWNgQVmX7T0u0B1j?si=VAfRC4WXRlu-P_tSvbA0Ng&nd=1" target="_blank"> <img src="../PreEntrega2_Biar/Img/Redes/spotify.png" alt="spotify" class="footer__img"></a>
-            <a href="https://www.youtube.com/user/ntvgtv" target="_blank"> <img src="../PreEntrega2_Biar/Img/Redes/youtube.png" alt="youtube" class="footer__img"></a>
-        </nav>
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/notevagustaroficial" target="_blank" role="button"><i class="fab fa-facebook-f"></i> <img src="Img/Redes/facebook.png" alt="facebook" class="footer__img"> </a> 
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/ntvgoficial" target="_blank" role="button"><i class="fab fa-twitter"> <img src="Img/Redes/twitter.png" alt="Twitter" class="footer__img"></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/notevagustaroficial/?hl=es-la" target="_blank" role="button"><i class="fab fa-instagram"> <img src="Img/Redes/instagram.png" alt="Instagram" class="footer__img"> </i></a>
+                <!-- Spotify -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://open.spotify.com/artist/4ZDoy7AWNgQVmX7T0u0B1j?si=VAfRC4WXRlu-P_tSvbA0Ng&nd=1" target="_blank" role="button"><i class="fab fa-facebook-f"></i> <img src="Img/Redes/spotify.png" alt="spotify" class="footer__img"> </a> 
+                <!-- Youtube -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/user/ntvgtv" target="_blank" role="button"><i class="fab fa-facebook-f"></i> <img src="Img/Redes/youtube.png" alt="youtube" class="footer__img"> </a> 
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        NO TE VA GUSTAR
+        </div>
     </footer>
     
+        
     <!-- JAVASCRIPT DE BOOTSTRAP (SIEMPRE ANTES DEL CIERRE) -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

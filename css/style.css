@@ -1,388 +1,181 @@
-
-* { margin:0px;
-    padding: 0px; }
-
-    /* HTML { Font-size: 62,5% ;} */
-
-
-a {text-decoration: none; color: white;}
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
 h1 {
-    font-family: Montserrat;
-    text-align: center;
-    font-size: 100px;
-    /* margin: 3rem;} */}
+  font-family: Montserrat;
+  text-align: center;
+}
+
 h2 {
-    text-align: center;
-    font-family: Montserrat;
-    text-decoration: underline;}
+  text-align: center;
+  font-family: Montserrat;
+  text-decoration: underline;
+}
+
 h3 {
-    font-weight: bold;
-    text-align: center;
-    font-family: Montserrat;}
+  font-weight: bold;
+  text-align: center;
+  font-family: Montserrat;
+}
+
 h6 {
-    text-align: center;
-    font-family: Montserrat;}
+  text-align: center;
+  font-family: Montserrat;
+}
+
 @font-face {
-    font-family: Montserrat;
-    src: url(../Font/Montserrat-VariableFont_wght.ttf);}
-
-
-/* HEADER */
-.menu__logo {
-    width: 60px;
-    margin: 10px;
+  font-family: Montserrat;
+  src: url(../Font/Montserrat-VariableFont_wght.ttf);
 }
-#menu {
-    grid-area: menu;
-    background-color: black;
-}
-.menu__nav {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;}
-
-nav ul li a:hover {
-    color: #BE9F6E;
-    border-bottom: solid 1px rgba(190, 159, 110, 0.25); 
+a {
+  color: white;
 }
 
-
-
-
-
-
-#body {
-    background-color: rgb(190, 159, 110);
-    display: grid;
-    grid-template-areas: 
-    "menu"
-    "body__inicio"
-    "body__historia"
-    "body__integrantes"
-    "footer";
-    grid-template-columns: repeat(1, 1fr);
-    text-align: center;
-
+#menu a:hover {
+  color: #BE9F6E;
+  border-bottom: solid 1px rgba(190, 159, 110, 0.25);
+}
+#menu .menu__logo {
+  width: 60px;
+  margin: 10px;
 }
 
-#body__inicio {
-    grid-area: body__inicio;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    gap: 10px;
+.footer__img {
+  height: 50px;
+  width: 50px;
 }
-
-#body__historia {
-    grid-area: body__historia;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    gap: 10px;
-    padding: 3rem;
-}
-
-#body__integrantes {
-    grid-area: body__integrantes;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    gap: 10px;
-}
-.banda__img {
-    width: 60rem;
-}
-
-/* FOOTER */
-#footer {
-    grid-area: footer;
-    background-color: black;
-    color: #BE9F6E;   
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-}
-
-#footer img {
-    width: 30px;
-}
-
-#footer nav {
-    display: flex;
-    gap: 10px;
-}
-
-
-/* TIENDA  */
-
-#body__tienda {
-    background-color: rgb(190, 159, 110);
-    text-align: center;
-}
-
-.productos {
-    display: flex;
-    flex-wrap: wrap;  
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.productos__card {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: white;
-    width: 250px;
-    height: 400px;
-    max-width: 100%;
-    border: solid 1px black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 1rem;
-    border-radius: 0.25rem;
-}
-
-.card__imagen {
-    height: 200px;
-}
-
-.boton {
-    background-color: rgb(190, 159, 110);
-    color: white;
-    width: 100px;
-    height: 30px;
-    border: solid 1px black;
-    border-radius: 0.25rem;
-}
-
-.boton:hover {
-    background-color: rgba(190, 159, 110,.5);
-    color: black;
-    font-weight: bold;
-    width: 100px;
-    height: 30px;
-    border: solid 1px black;
-}
-
-
-/* CONTACTO */
-
-#body__contacto {
-    background-color: rgb(190, 159, 110);
-    text-align: center;
-
-}
-
-#contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 3rem;
-    gap: 2rem;
-}
-
-.contacto__enunciado {    
-    text-align: center;
-    width: 400px;
-}
-
-.formulario {
-    font-family: Montserrat;
-    src: url(../Font/Montserrat-VariableFont_wght.ttf);
-    background-color: rgb(215, 215, 215);
-    color: black;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 500px;
-    height: 460px;
-    border-radius: 0.25rem;
-    border: solid 1px black;
-}
-
-.formulario__item {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 1rem;
-    gap: 5px;
-}
-
-.formulario__informacion {
-    display: flex;
-    gap: 5px;
-    align-items: baseline;
-    margin: 1rem;
-}
-
-input {
-    font-family: Montserrat;
-    src: url(../Font/Montserrat-VariableFont_wght.ttf);
-}
-.formulario__enviar {
-    display: flex;
-    justify-content: center;
-}
-.formulario__boton {
-    margin: 1rem;
-    color: white;
-    background-color: #BE9F6E;
-    width: 100px;
-    height: 50px;
-    border: solid 1px black;
-    border-radius: 0.25rem;
-
-}
-.formulario__boton:hover {
-    margin: 1rem;
-    color: white;
-    background-color: rgba(190, 159, 110,.5);
-    color: black;
-    font-weight: bold;
-    border: solid 1px black;
-}
-
-
 
 /* DISCOGRAFIA */
-
 #body__discografia {
-    background-color: rgb(190, 159, 110);
-    text-align: center;
-
+  background-color: rgb(190, 159, 110);
+  text-align: center;
 }
 
 #discografia {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    gap: 30px;
-    margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  gap: 30px;
+  margin-bottom: 3rem;
 }
+
 .discografia__album img {
-    width: 350px;
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
+  width: 350px;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
 }
+
 .discografia__album:hover {
-    border: solid 1px black;}
-
-
-/* GALERIA */
-
-#body__galeria {
-    background-color: rgb(190, 159, 110);
-    text-align: center;
-}
-
-#galeria {
-    margin: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    gap: 100px;
-}
-
-#galeria img {
-    width: 500px;
-
+  border: solid 1px black;
 }
 
 @media screen and (min-width: 768px) {
-
-    /* HEADER */
-    .menu__nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;}
-    .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;}
-    
-    /* FOOTER */
-    #footer {
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: 1fr; 
-        gap: 10px 10px; 
-        width: 100%;
-        height: 60px;    
-    }
-    
-    #footer img {
-        width: 30px;
-    }
-    
-    #footer nav {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    /* TIENDA */
-
-    .productos__card {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    /* CONTACTO */
-
-    .contacto__enunciado {   
-        display: flex;
-        align-self: flex-start;
-    text-align: center; 
-        width: 400px;
-    }
-    
-    #contacto {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    /* DISCOGRAFIA */
-
-    #discografia {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
-
-    /* GALERIA */
-    #galeria {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
-
+  #discografia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
 }
+/* TIENDA  */
+#body__tienda {
+  background-color: rgb(190, 159, 110);
+  text-align: center;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.productos__card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 250px;
+  height: 400px;
+  max-width: 100%;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem;
+  border-radius: 0.25rem;
+}
+
+.card__imagen {
+  height: 200px;
+}
+
+.boton {
+  background-color: rgb(190, 159, 110);
+  color: white;
+  width: 100px;
+  height: 30px;
+  border: solid 1px black;
+  border-radius: 0.25rem;
+}
+
+.boton:hover {
+  background-color: rgba(190, 159, 110, 0.5);
+  color: black;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  border: solid 1px black;
+}
+
+@media screen and (min-width: 768px) {
+  .productos__card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+/* GALERIA */
+#body__galeria {
+  background-color: rgb(190, 159, 110);
+  text-align: center;
+}
+
+#galeria {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  gap: 100px;
+}
+
+#galeria img {
+  width: 500px;
+}
+
+#carouselExampleAutoplaying {
+  margin: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  #galeria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
