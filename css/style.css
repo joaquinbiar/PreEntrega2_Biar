@@ -4,6 +4,7 @@
 }
 
 h1 {
+  margin: 1rem;
   font-family: Montserrat;
   text-align: center;
 }
@@ -43,8 +44,26 @@ a {
 }
 
 .footer__img {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
+}
+
+#body {
+  background-color: rgb(190, 159, 110);
+  text-align: center;
+}
+
+#body__inicio {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#body__historia {
+  gap: 10px;
+  padding: 3rem;
 }
 
 /* DISCOGRAFIA */
@@ -175,6 +194,95 @@ a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+  }
+}
+#body__contacto {
+  background-color: rgb(190, 159, 110);
+  text-align: center;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem;
+  gap: 2rem;
+}
+
+.contacto__enunciado {
+  text-align: center;
+  width: 400px;
+}
+
+.formulario {
+  font-family: Montserrat;
+  src: url(../Font/Montserrat-VariableFont_wght.ttf);
+  background-color: rgb(215, 215, 215);
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 500px;
+  height: 600px;
+  border-radius: 0.25rem;
+  border: solid 1px black;
+}
+
+.formulario__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 5px;
+}
+
+.formulario__informacion {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+  margin: 1rem;
+}
+
+input {
+  font-family: Montserrat;
+  src: url(../Font/Montserrat-VariableFont_wght.ttf);
+}
+
+.formulario__enviar {
+  display: flex;
+  justify-content: center;
+}
+
+.formulario__boton {
+  margin: 1rem;
+  color: white;
+  background-color: #BE9F6E;
+  width: 100px;
+  height: 50px;
+  border: solid 1px black;
+  border-radius: 0.25rem;
+}
+
+.formulario__boton:hover {
+  margin: 1rem;
+  color: white;
+  background-color: rgba(190, 159, 110, 0.5);
+  color: black;
+  font-weight: bold;
+  border: solid 1px black;
+}
+
+@media screen and (min-width: 768px) {
+  .contacto__enunciado {
+    display: flex;
+    align-self: flex-start;
+    text-align: center;
+    width: 400px;
+  }
+  #contacto {
+    display: flex;
+    flex-direction: row;
   }
 }
 
