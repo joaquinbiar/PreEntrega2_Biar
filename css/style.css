@@ -59,11 +59,23 @@ a {
   text-align: center;
   align-items: center;
   gap: 10px;
+  margin-bottom: 3rem;
 }
 
 #body__historia {
-  gap: 10px;
   padding: 3rem;
+}
+#body__historia h2 {
+  margin-bottom: 2rem;
+}
+
+#body__integrantes h2 {
+  margin: 3rem;
+}
+
+.NTVG__footer {
+  text-decoration: none;
+  list-style: none;
 }
 
 /* DISCOGRAFIA */
@@ -223,7 +235,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 500px;
+  width: 300;
   height: 600px;
   border-radius: 0.25rem;
   border: solid 1px black;
