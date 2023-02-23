@@ -10,20 +10,20 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   font-family: Montserrat;
+  text-align: center;
   text-decoration: underline;
 }
 
 h3 {
   font-weight: bold;
-  text-align: center;
   font-family: Montserrat;
+  text-align: center;
 }
 
 h6 {
-  text-align: center;
   font-family: Montserrat;
+  text-align: center;
 }
 
 @font-face {
